@@ -1,0 +1,36 @@
+{
+  "id": "media_section",
+  "type": "SharedSlice",
+  "name": "MediaSection",
+  "description": "MediaSection",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "MediaSection",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        }
+      },
+      "items": {
+        "mediaSectionVideo": {
+          "type": "Image",
+          "config": {
+            "id": "mediaSectionVideo",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

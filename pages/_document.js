@@ -1,6 +1,7 @@
 // pages/_document.js
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+
 import { createResolver } from "next-slicezone/resolver";
 
 export default class extends Document {

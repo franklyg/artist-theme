@@ -1,0 +1,14 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "QuoteElem",
+    "primary": {
+      "quote": "strategize next-generation functionalities"
+    },
+    "items": [],
+    "slice_type": "quote_elem"
+  }
+]

@@ -1,6 +1,9 @@
 {
   "libraries": [
+    "@/elem",
     "@/slices"
   ],
-  "_latest": "0.0.44"
+  "_latest": "0.0.45",
+  "apiEndpoint": "https://artist-theme.cdn.prismic.io/api/v2",
+  "storybook": "http://localhost:8888"
 }

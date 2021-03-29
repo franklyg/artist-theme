@@ -1,0 +1,26 @@
+{
+  "id": "headline_elem",
+  "type": "SharedSlice",
+  "name": "HeadlineElem",
+  "description": "HeadlineElem",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "HeadlineElem",
+      "primary": {
+        "headline": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "headline",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

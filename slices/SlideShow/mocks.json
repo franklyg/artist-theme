@@ -1,0 +1,50 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "SlideShow",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Dolor incididunt esse fugiat nisi ad ex esse voluptate ullamco anim duis laboris. Consequat in veniam pariatur consequat elit nostrud mollit ullamco dolor. Dolore in nostrud ut mollit nostrud ea velit aute sit exercitation elit.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Laborum exercitation ut est id do. Tempor occaecat deserunt deserunt consequat.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "slideImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "slideImage": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72?w=900&h=500&fit=crop"
+        }
+      }
+    ],
+    "slice_type": "slide_show"
+  }
+]

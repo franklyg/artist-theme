@@ -1,0 +1,25 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CopyElem",
+    "primary": {
+      "copy": [
+        {
+          "type": "heading1",
+          "text": "E-enable visionary e-commerce",
+          "spans": []
+        },
+        {
+          "type": "paragraph",
+          "text": "Proident labore tempor veniam. In ullamco laboris nisi laborum laborum velit est irure sit consequat quis occaecat officia irure consequat.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "copy_elem"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "id": "subheadline_elem",
+  "type": "SharedSlice",
+  "name": "SubheadlineElem",
+  "description": "SubheadlineElem",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "SubheadlineElem",
+      "primary": {
+        "subheadline": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "subheadline",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

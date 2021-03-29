@@ -1,0 +1,14 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "HeadlineElem",
+    "primary": {
+      "headline": "brand collaborative portals"
+    },
+    "items": [],
+    "slice_type": "headline_elem"
+  }
+]

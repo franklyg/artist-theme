@@ -1,0 +1,57 @@
+{
+  "id": "media_items",
+  "type": "SharedSlice",
+  "name": "MediaItems",
+  "description": "MediaItems",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "MediaItems",
+      "primary": {
+        "title": {
+          "type": "StructuredText",
+          "config": {
+            "single": "heading1",
+            "label": "Title",
+            "placeholder": "This is where it all begins..."
+          }
+        },
+        "numOfColumns": {
+          "config": {
+            "label": "",
+            "placeholder": "",
+            "default_value": "2",
+            "options": [
+              "2",
+              "3",
+              "4"
+            ]
+          },
+          "type": "Select"
+        }
+      },
+      "items": {
+        "mediaItemsVideo": {
+          "config": {
+            "label": "Video File",
+            "placeholder": "Get your video link",
+            "allowTargetBlank": true
+          },
+          "type": "Link"
+        },
+        "mediaItemsVideoThumbnail": {
+          "type": "Image",
+          "config": {
+            "id": "mediaItemsVideoThumbnail",
+            "label": "",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "MusicPage",
+    "primary": {},
+    "items": [
+      {
+        "spotifyID": "2rZxoCObBFfJ42Evzlznxs",
+        "trackType": "album",
+        "listeningType": "ALBUM"
+      },
+      {
+        "spotifyID": "2rZxoCObBFfJ42Evzlznxs",
+        "trackType": "album",
+        "listeningType": "ALBUM"
+      },
+      {
+        "spotifyID": "2rZxoCObBFfJ42Evzlznxs",
+        "trackType": "album",
+        "listeningType": "ALBUM"
+      },
+      {
+        "spotifyID": "2rZxoCObBFfJ42Evzlznxs",
+        "trackType": "album",
+        "listeningType": "ALBUM"
+      },
+      {
+        "spotifyID": "2rZxoCObBFfJ42Evzlznxs",
+        "trackType": "album",
+        "listeningType": "ALBUM"
+      }
+    ],
+    "slice_type": "music_page"
+  }
+]

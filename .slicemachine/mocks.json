@@ -1,0 +1,69 @@
+{
+  "FoldSection": {
+    "primary": {
+      "title": {
+        "config": {
+          "patternType": "HEADING",
+          "blocks": 1
+        }
+      },
+      "description": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "NavigationSlice": {},
+  "FooterSlice": {},
+  "TourDates": {
+    "items": {
+      "tourDatesLinkCopy": {
+        "content": "Buy Now"
+      }
+    }
+  },
+  "MediaSection": {},
+  "MediaItems": {
+    "items": {
+      "mediaItemsVideo": {
+        "content": "https://ak03-video-cdn.slidely.com/media/videos/14/42/1442ff5a9a34928ba96b2a482e7695d1-180-preview.mp4"
+      }
+    },
+    "primary": {
+      "numOfColumns": {
+        "content": "3"
+      }
+    }
+  },
+  "SlideShow": {},
+  "CircleMesh": {},
+  "MusicPage": {
+    "items": {
+      "spotifyID": {
+        "content": "2rZxoCObBFfJ42Evzlznxs"
+      },
+      "trackType": {
+        "content": "album"
+      },
+      "listeningType": {
+        "content": "ALBUM"
+      }
+    }
+  },
+  "CopyElem": {
+    "primary": {
+      "copy": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
+      }
+    }
+  },
+  "DividerElem": {},
+  "HeadlineElem": {},
+  "QuoteElem": {},
+  "SubheadlineElem": {}
+}

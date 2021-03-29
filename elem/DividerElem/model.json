@@ -1,0 +1,26 @@
+{
+  "id": "divider_elem",
+  "type": "SharedSlice",
+  "name": "DividerElem",
+  "description": "DividerElem",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "DividerElem",
+      "primary": {
+        "dividerColor": {
+          "type": "Color",
+          "config": {
+            "label": "",
+            "id": "dividerColor",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "TourDates",
+    "primary": {
+      "tourDatesTitle": "empower bleeding-edge technologies"
+    },
+    "items": [
+      {
+        "tourDatesDay": "2015-05-02",
+        "tourDatesCity": "aggregate bricks-and-clicks ROI",
+        "tourDatesVenue": "leverage granular channels",
+        "tourDatesLinkCopy": "Buy Now",
+        "tourDatesLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "tourDatesDay": "2012-01-03",
+        "tourDatesCity": "harness value-added mindshare",
+        "tourDatesVenue": "streamline sexy models",
+        "tourDatesLinkCopy": "Buy Now",
+        "tourDatesLink": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "tourDatesDay": "2012-03-14",
+        "tourDatesCity": "utilize global eyeballs",
+        "tourDatesVenue": "brand magnetic web-readiness",
+        "tourDatesLinkCopy": "Buy Now",
+        "tourDatesLink": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "tourDatesDay": "2015-04-27",
+        "tourDatesCity": "whiteboard sexy e-commerce",
+        "tourDatesVenue": "seize proactive ROI",
+        "tourDatesLinkCopy": "Buy Now",
+        "tourDatesLink": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "slice_type": "tour_dates"
+  }
+]

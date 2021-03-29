@@ -1,0 +1,27 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "CircleMesh",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Ex sunt cupidatat aliquip amet laborum qui reprehenderit quis nisi consectetur esse aliqua aliquip. Irure elit do proident quis ut ad magna cillum amet fugiat ut non pariatur.",
+          "spans": []
+        }
+      ],
+      "description": [
+        {
+          "type": "paragraph",
+          "text": "Quis sunt exercitation non ut Lorem consequat ut esse commodo magna deserunt esse voluptate in. Laborum consectetur irure do ea minim.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [],
+    "slice_type": "circle_mesh"
+  }
+]

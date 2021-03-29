@@ -1,0 +1,67 @@
+{
+  "id": "tour_dates",
+  "type": "SharedSlice",
+  "name": "TourDates",
+  "description": "TourDates",
+  "variations": [
+    {
+      "id": "default-slice",
+      "name": "Default slice",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TourDates",
+      "primary": {
+        "tourDatesTitle": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "tourDatesTitle",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "tourDatesDay": {
+          "type": "Date",
+          "config": {
+            "label": "",
+            "id": "tourDatesDay",
+            "placeholder": ""
+          }
+        },
+        "tourDatesCity": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "tourDatesCity",
+            "placeholder": ""
+          }
+        },
+        "tourDatesVenue": {
+          "type": "Text",
+          "config": {
+            "label": "",
+            "id": "tourDatesVenue",
+            "placeholder": ""
+          }
+        },
+        "tourDatesLinkCopy": {
+          "config": {
+            "label": "",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
+        "tourDatesLink": {
+          "type": "Link",
+          "config": {
+            "label": "",
+            "id": "tourDatesLink",
+            "placeholder": "",
+            "allowTargetBlank": true
+          }
+        }
+      }
+    }
+  ]
+}

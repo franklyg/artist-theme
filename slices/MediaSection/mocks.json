@@ -1,0 +1,43 @@
+[
+  {
+    "id": "default-slice",
+    "name": "Default slice",
+    "docURL": "...",
+    "version": "sktwi1xtmkfgx8626",
+    "description": "MediaSection",
+    "primary": {
+      "title": [
+        {
+          "type": "paragraph",
+          "text": "Cupidatat pariatur cupidatat ipsum est et veniam occaecat esse Lorem. Laboris est culpa dolor labore mollit minim.",
+          "spans": []
+        }
+      ]
+    },
+    "items": [
+      {
+        "mediaSectionVideo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+        }
+      },
+      {
+        "mediaSectionVideo": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": "Placeholder image",
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1600861194802-a2b11076bc51?w=900&h=500&fit=crop"
+        }
+      }
+    ],
+    "slice_type": "media_section"
+  }
+]
