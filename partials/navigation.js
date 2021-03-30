@@ -13,43 +13,16 @@ function Navigation (){
   useEffect(() => {
 
     const fetchData = async () => {
-        const myHeaders = new Headers();
-
+        
         const SPOTIFY_ID = '0CXrZUvQjJYUiI0oztItS5';
         const TRACK_TYPE = 'track';
 
         var dataJSON = [];
-
-        const myRequest = new Request(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`, {
-        method: 'GET',
-        headers: myHeaders,
-        mode: 'cors',
-        cache: 'default',
-        });
-
-        fetch(myRequest)
-        .then(response => response.json())
-        .then(myBlob => {
-            // dataJSON = await res.json();
-            return setData(myBlob)
-        });
-
-        // const SPOTIFY_ID = '0CXrZUvQjJYUiI0oztItS5';
-        // const TRACK_TYPE = 'track';
       
-        // const res = await fetch(
-        // `https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`, 
-        // { 
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //         "Access-Control-Allow-Origin" : "*", 
-        //         "Access-Control-Allow-Credentials" : true 
-        //     },
-        //     mode: 'no-cors' 
-        // }
-        // );
-        // dataJSON = await res.json();
-        // return setData(dataJSON)
+        const res = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`);
+        dataJSON = await res.json();
+        return setData(dataJSON);
+
     }
     fetchData()
   }, []);
