@@ -22,7 +22,7 @@ function Navigation (){
         const res = await fetch(
         `https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`, { 
             headers: {
-                "Content-Type': 'application/json",
+                "Content-Type": "application/json",
                 "Access-Control-Allow-Origin" : "*", 
                 "Access-Control-Allow-Credentials" : true 
             },
