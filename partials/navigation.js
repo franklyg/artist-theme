@@ -19,7 +19,7 @@ function Navigation (){
         const SPOTIFY_ID = '0CXrZUvQjJYUiI0oztItS5';
         const TRACK_TYPE = 'track'
       
-        const res = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`);
+        const res = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`, { mode: 'no-cors' });
         dataJSON = await res.json()
         return setData(dataJSON)
     }
@@ -223,9 +223,6 @@ function Navigation (){
                                 objectFit: 'cover',
                                 height: '100%',
                                 width: '50%',
-                                '@media screen and (min-width: 769px)': {
-                                    width: '100%', 
-                                },
                                 boxShadow: '0 0px 1px 0px rgba(0,0,0,.01), 0 3px 10px 3px rgba(0,0,0,.25)'
                             }}
                             />
