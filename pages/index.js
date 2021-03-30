@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { Client } from "../prismicKits";
 import SliceZone from "next-slicezone";
 import { useGetStaticProps } from "next-slicezone/hooks";
@@ -7,6 +8,7 @@ import resolver from "../sm-resolver.js";
 const Page = (props) => {
   return (
     <>
+      <Head></Head>
       <Navigation />
       <SliceZone {...props} resolver={resolver} />
     </>
