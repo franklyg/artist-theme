@@ -10,11 +10,9 @@ import Navigation from '../../partials/navigation'
 
 const MusicPage = (props) => {
   const [multiSongData, setMultiSongData] = useState([]);
-  const [singleSongData, setSingleSongData] = useState([]);
 
   useEffect(() => {
     setMultiSongData(props.multipleSongsJSON)
-    setSingleSongData(props.singleSongJSON)
   }, []);
 
   return(
@@ -42,7 +40,7 @@ const MusicPage = (props) => {
               width: '33.333333%',
               padding: '0 3%',
             },
-            margin: '0 0 3% 0',
+            margin: '0 0 2rem 0',
           }}>
             <img 
               src={`${item.entitiesByUniqueId[`${item.entityUniqueId}`].thumbnailUrl}`}
