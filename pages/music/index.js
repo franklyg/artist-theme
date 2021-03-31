@@ -198,7 +198,7 @@ export const useGetStaticProps = ({
 
 export const getStaticProps = useGetStaticProps({
   client: Client(),
-  uid: () => "music",
+  uid: () => "music-page",
 })
 
 export default MusicPage;
