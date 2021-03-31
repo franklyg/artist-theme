@@ -1,6 +1,6 @@
 /** @jsxRuntime classic /
 /* @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx } from 'theme-ui';
 import React from "react";
 import Head from "next/head";
 import Prismic from '@prismicio/client'
@@ -18,6 +18,9 @@ import { hrefResolver, linkResolver } from '../../prismicKits'
 const Home = ({ posts }) => {
   return(
     <div>
+      <Head>
+        <title>Fragmiint</title>
+      </Head>
       <Navigation />
       <div
         sx={{

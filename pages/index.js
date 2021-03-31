@@ -8,7 +8,9 @@ import resolver from "../sm-resolver.js";
 const Page = (props) => {
   return (
     <>
-      <Head></Head>
+      <Head>
+        <title>Fragmiint</title>
+      </Head>
       <Navigation />
       <SliceZone {...props} resolver={resolver} />
     </>

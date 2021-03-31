@@ -1,5 +1,6 @@
 /** @jsxRuntime classic /
 /* @jsx jsx */
+import Head from 'next/head';
 import { jsx } from 'theme-ui';
 import { Client } from "../../prismicKits";
 import SliceZone from "next-slicezone";
@@ -10,6 +11,9 @@ import resolver from "../../sm-resolver";
 const Page = (props) => {
   return(
     <>
+      <Head>
+        <title>Fragmiint</title>
+      </Head>
       <Navigation />
       <div
         sx={{
