@@ -525,9 +525,14 @@ h6 {
     display: -ms-flexbox;
     display: flex;
   }
+
+body{
+  padding-bottom: 17vw;
+}
 @media(min-width: 769px){
   body{
     padding-left: 6vw;
+    padding-bottom: 5vw;
   }
 }
 
