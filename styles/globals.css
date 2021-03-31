@@ -568,7 +568,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 100vw;
-  height: 8.5vh;
+  /* height: 8.5vh; */
   border-top: 2px solid black;
   background: white;
   z-index: 1000;

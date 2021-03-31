@@ -12,7 +12,6 @@ const MySlice = ({ slice }) => (
       padding: '0 2rem'
     }}
   >
-   
   </section>
 );
 
