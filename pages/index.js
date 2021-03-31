@@ -12,7 +12,7 @@ const Page = ({ dataJSON }, props) => {
       <Head>
         <title>Fragmiint</title>
       </Head>
-      <Navigation />
+      <Navigation dataJSON={dataJSON}/>
       <SliceZone {...props} resolver={resolver} />
     </>
   )
