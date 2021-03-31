@@ -2,26 +2,27 @@
 /* @jsx jsx */
 import { jsx } from 'theme-ui';
 import React from "react";
-import Head from "next/head";
-import Prismic from '@prismicio/client'
-import { RichText } from "prismic-reactjs";
 import { default as NextLink } from 'next/link'
-import Navigation from '../../partials/navigation'
+import Head from "next/head";
 
-// Project components & functions
+import Prismic from '@prismicio/client';
+import { query } from "next-slicezone/features/query";
+
 import { Client } from "../../prismicKits";
 import { hrefResolver, linkResolver } from '../../prismicKits'
+
+import Navigation from '../../partials/navigation'
 
 /**
  * Homepage component
  */
-const Home = ({ posts }) => {
+const Home = ({ posts, singleSongJSON }) => {
   return(
     <div>
       <Head>
         <title>Fragmiint</title>
       </Head>
-      <Navigation />
+      <Navigation dataJSON={singleSongJSON}/>
       <div
         sx={{
           maxWidth: '750px',
@@ -74,10 +75,21 @@ export async function getStaticProps({ preview = null, previewData = {} }) {
     },
   )
 
+  /*
+    Collects a single song
+  */
+  let singleSongJSON = [];
+  const SPOTIFY_ID = '0CXrZUvQjJYUiI0oztItS5';
+  const TRACK_TYPE = 'track';
+
+  const song = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`);
+  singleSongJSON = await song.json();
+
   return {
     props: {
       posts: posts ? posts.results : [],
-      preview
+      preview,
+      singleSongJSON
     }
   }
 }

@@ -2,22 +2,24 @@
 /* @jsx jsx */
 import { jsx } from 'theme-ui'
 import React, {useState, useEffect } from 'react';
-import Music from '../../components/MusicItem';
-import { array, shape } from 'prop-types';
-import { RichText } from 'prismic-reactjs';
 
-const MusicPage = ({ slice }) => {
+import { Client } from "../../prismicKits";
+import { query } from "next-slicezone/features/query";
 
-  const [data, setData] = useState([]);
+import Navigation from '../../partials/navigation'
+
+const MusicPage = (props) => {
+  const [multiSongData, setMultiSongData] = useState([]);
+  const [singleSongData, setSingleSongData] = useState([]);
 
   useEffect(() => {
-      // setData(api)
-    
+    setMultiSongData(props.multipleSongsJSON)
+    setSingleSongData(props.singleSongJSON)
   }, []);
-
 
   return(
     <section>
+      <Navigation dataJSON={props.singleSongJSON}/>
       <div
         sx={{
           display: 'flex',
@@ -28,13 +30,12 @@ const MusicPage = ({ slice }) => {
         }}
       >
       { 
-        console.log(data),
-        data == '' ? 
-        <div className  ="pre-load">
+        multiSongData == '' ? 
+        <div className="pre-load">
           <p><b>LOADING</b></p>
         </div> 
         :
-        data.map((item, i) => 
+        multiSongData.map((item, i) => 
           <div key={i} sx={{
             width: '100%',
             '@media screen and (min-width: 769px)': {
@@ -43,7 +44,6 @@ const MusicPage = ({ slice }) => {
             },
             margin: '0 0 3% 0',
           }}>
-            {console.log(item)}
             <img 
               src={`${item.entitiesByUniqueId[`${item.entityUniqueId}`].thumbnailUrl}`}
               sx={{
@@ -117,5 +117,88 @@ const MusicPage = ({ slice }) => {
 
   )
 }
+
+export const useGetStaticProps = ({
+  uid,
+  lang,
+  params,
+  client,
+  body = 'body',
+  type = 'page',
+  queryType = 'repeat',
+}) => {
+  const apiParams = params || { lang }
+
+  return async function getStaticProps({
+    preview = null,
+    previewData = {},
+    params = {}
+  }) {
+
+    const { ref = null } = previewData
+    const resolvedUid = typeof uid === 'function' ? uid({ params, previewData, preview }) : (uid || null)
+
+    try {
+      const doc = await query({
+        queryType,
+        apiParams: Object.assign({ ref }, apiParams),
+        type,
+        uid: resolvedUid,
+        client,
+      })
+
+      let multipleSongsJSON = [],
+          singleSongJSON = [],
+          songs = []
+      
+      /*
+        Collects and array of songs.
+      */
+      let docs = doc.data.body[0].items;
+      for(var i = 0; i < docs.length; i++){
+        console.log(docs[i].trackType);
+        songs = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${docs[i].trackType}%3A${docs[i].spotifyID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`);
+        const musicData = await songs.json()
+        multipleSongsJSON.push(musicData)
+      }
+      /*
+        Collects a single song
+      */
+      const SPOTIFY_ID = '0CXrZUvQjJYUiI0oztItS5';
+      const TRACK_TYPE = 'track';
+
+      const song = await fetch(`https://api.song.link/v1-alpha.1/links?url=spotify%3A${TRACK_TYPE}%3A${SPOTIFY_ID}&userCountry=US&key=9ab8abaf-c5f1-4edb-8e7f-7f72c7033693`);
+      singleSongJSON = await song.json();
+
+      return {
+        props: {
+          ...doc,
+          error: null,
+          slices: doc ? doc.data[body] : [],
+          multipleSongsJSON,
+          singleSongJSON
+        }
+      }
+
+    } catch(e) {
+      if (process.env.NODE_ENV !== 'production') {
+        console.error(`[next-slicezone] ${e.toString()}`)
+      }
+      return {
+        props: {
+          ref,
+          error: e.toString(),
+          uid: resolvedUid,
+          slices: [],
+        }
+      }
+    }
+  }
+}
+
+export const getStaticProps = useGetStaticProps({
+  client: Client(),
+  uid: () => "music",
+})
 
 export default MusicPage;

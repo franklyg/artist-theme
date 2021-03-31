@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { Client } from "../prismicKits";
 import SliceZone from "next-slicezone";
 import Prismic from '@prismicio/client'
-// import { useGetStaticProps } from "next-slicezone/hooks";
 import { query } from "next-slicezone/features/query";
 import Navigation from '../partials/navigation'
 import resolver from "../sm-resolver.js";
@@ -13,7 +12,7 @@ const Page = (props) => {
       <Head>
         <title>Fragmiint</title>
       </Head>
-      <Navigation dataJSON={props.dataJSON}/>
+      <Navigation dataJSON={props.dataJSON} />
       <SliceZone {...props}  resolver={resolver} />
     </>
   )
@@ -74,7 +73,6 @@ export const useGetStaticProps = ({
           error: e.toString(),
           uid: resolvedUid,
           slices: [],
-          // registry: null
         }
       }
     }
