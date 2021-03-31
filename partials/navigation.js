@@ -5,8 +5,6 @@ import React, {useState, useEffect} from 'react';
 
 
 function Navigation ({dataJSON}){
-
-  console.log(dataJSON)
   const [toggleNav, setToggleNav] = useState(false);
 
   const [data, setData] = useState();

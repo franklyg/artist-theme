@@ -14,7 +14,7 @@ const Page = (props) => {
       <Head>
         <title>Fragmiint</title>
       </Head>
-      <Navigation />
+      <Navigation/>
       <div
         sx={{
           maxWidth: '750px',
