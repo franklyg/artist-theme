@@ -116,9 +116,10 @@ function Navigation ({dataJSON}){
                 width: '100%',
                 transition: '.5s all ease',
                 zIndex: '1',
-                height: '100vh',
+                height: '91vh',
                 '@media screen and (min-width: 769px)': {
                     left: '6vw',
+                    height: '100vh',
                 }
             }}
         >
