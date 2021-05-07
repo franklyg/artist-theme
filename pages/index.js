@@ -39,7 +39,7 @@ export const useGetStaticProps = ({
     const resolvedUid = typeof uid === 'function' ? uid({ params, previewData, preview }) : (uid || null)
 
     var dataJSON = [];
-
+    // Single Song or Album Links
     const SPOTIFY_ID = '68QbGhHafDIVZ1d7lIqTQf';
     const TRACK_TYPE = 'track';
 
